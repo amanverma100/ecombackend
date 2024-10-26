@@ -5,7 +5,7 @@ const connectdb=require('./config/database')
 const router=require('./routes')
 const cookieParser=require('cookie-parser');
 const app=express();
-app.use(cors({origin:"https://ecomfrontend1.vercel.app/"}));
+app.use(cors());
  //app.use(cookieParser());
 app.use(express.json());
 app.use('/api',router);
